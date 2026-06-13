@@ -28,4 +28,5 @@ if __name__ == "__main__":
     for event in longpoll.listen():
         if event.type == VkEventType.MESSAGE_NEW and event.to_me:
             intent = get_dialog_response(session_id, event.text, language_code, project_id)
-            echo(intent['response_text'], vk_api, event.user_id)
+            if not intent['intent'] == 'Default Fallback Intent':
+                echo(intent['response_text'], vk_api, event.user_id)
