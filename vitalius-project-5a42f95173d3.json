@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "vitalius-project",
+  "private_key_id": "5a42f95173d3dac6ba961b7d5154e6848e13a92a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC+c1e255GnWzM3\ng2T+RrmsSaET13E7K9wIFLsdbsDA6x57PiKElA8hmykXMy0hyi1rGoVTiFg0xWNj\nTuUGJegtXqf5XIDTsQw5ym58FvzEpfRuCb9Ska9L+Sxip3FjWYLSSC0Jb3p2HBdu\nPKxLdIjky/1L4tVQqIrc5qVTRTdvFoPsAAmm295Sa+e6nh9E86gd7Mb9EH63JjTG\nXkJ1quke4yWvEWt0shW2s1QEuHbvNYG0ud51x+XVxFdG/K2rNOqox0QkxhWCMV+o\nW46v2MIfKBgj2tz7aP88iWOgP8CuILzNAhmKNuSjfkZtaWIoJrGuEdSjCenEcdw7\nMiJvMpAJAgMBAAECggEAQ+kLKPxP0rZRgAUJWSZNBONIXbPf+3J7RiJmSmt4rhHo\nz5drZY0KDDiwoUYtXLQkF+HgEtY2ZbLQ6tNyFQwlSzBKgz957IJgUqcdWIA158Up\ncKdnIoEyWcvjCNaeNwfu/x6feJLYvw7rR/K4mTtXqQYYLxwWZmmDApv37cZrqt9k\nhopk7tso58KKymTjB5JhteIQOAYOfUc/FUeicqfhTxCioyI85a7tqQcBP43MUHab\n5ae5F2nHd3lgVly5d9raiOip8XB2+QzWdOPiWJNpDxOkJfJyvqYea0j2cxSb61WL\nUw1zzKzWTqwxLPfRBJIq8LQ0PEhyVBif2iw3wAjNJQKBgQD80H3gkYmS8/0aCAyl\nGdXtwnqeC7hy4jv4S6nO5YVSGkus8TFIdz7YPFHP5D/3DrhGogOyvbpgIKFsKKsJ\n+4JsdqWxUOa4H7JT+39P/Gu9sAwqyT7ciIDZHYPoQzDE75Kv1Cfs/lBhsB/1pyL1\n6kts0PhEry261Aik9jzOuLirAwKBgQDA2a7Adpvmy3iJQ6qlfTpZdctfrq6Bg6JW\nMfU6vOo/sBOwqCz49TE2Zt0EJeon4tLIayGKWBG9vO1JT0ZTN8MHvtS3lFeC4IKU\nEzH8Ecf9MAkJ8HDmANC3UjKQNbVq+pTbdhl+YzUwMYJFPMs80IbYuzzCqA6iSTXO\nXpo6jBCFAwKBgQCzSfSLJwtGoSu0o1K8X3ccd1hX7v3u00wuSRJyvMjwsd9LFX2a\n45444YYvhbJrNhAvX0R6JR0ggOOZfbnWiXw0CWx2NGZ621evQWNHST7rNgda7H9d\nDJ073DeopsXWVARWF4H9C1nb/Xic0Nv1RCQbVpNKumUW4roCqvHytIOaGwKBgAeF\ndedTuOjbbqwL04/4vlnW2kO1EGFEvQQXlrTfwVMSjvII3Rgol+7DPEN5JxS/J/Fh\nHEHFBYwc3jRJvzhnqFeY/brbMj6MewtDZGOsXdxmDzQwCHcv+PPtZMNzFMxDUaLt\njDj9rYlfpPEGWfbZOykgxFHjNA7oRAz0a5d09v/5AoGAL1xMztzuC4vR92dXCgQ7\nqurcbRKPyRNWwAaBxJtp0X27cK6Ya/1AWCJGHOsRyWDkK7s6t0FKb4uMxQGYHOFG\nlA4hVZfFZT0UJESYQGlTqJCt5vdtRj3Ou6yQyUB7aHEUhqoeqO2W+G8X7rsn5SUV\nRK3sL+bgwvCavsrt8q5BzdE=\n-----END PRIVATE KEY-----\n",
+  "client_email": "vitalius-tg@vitalius-project.iam.gserviceaccount.com",
+  "client_id": "115867355484580384086",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/vitalius-tg%40vitalius-project.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
