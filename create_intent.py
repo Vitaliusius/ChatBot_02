@@ -35,7 +35,7 @@ def create_intent():
     message = dialogflow.Intent.Message(text=text)
 
     intent = dialogflow.Intent(
-        display_name=display_name, training_phrases=training_phrases, messages=[message_texts]
+        display_name=display_name, training_phrases=training_phrases, messages=[message]
     )
 
     response = intents_client.create_intent(
