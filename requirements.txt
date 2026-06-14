@@ -1,1 +1,5 @@
-
+vk_api==11.10.0
+pyTelegramBotAPI==4.33.0
+environs==14.2.0
+requests==2.33.1
+google-cloud-dialogflow==2.48.0
