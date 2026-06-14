@@ -56,7 +56,6 @@ if __name__ == "__main__":
                         vk_api,
                         event.user_id
                     )
-                    3/0
     except Exception:
         text = logger.exception('Бот vk упал с ошибкой:')
         send_message_tg(bot, session_id, project_id, text)
