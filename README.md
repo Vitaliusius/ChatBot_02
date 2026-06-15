@@ -4,7 +4,7 @@
 
 Использует Dialogflow от Google для выбора нужных ответов на поступающие сообщения.
 
-Пример работы бота можно увидеть в группе (ВК)[https://vk.com/club239555705], написав сообщение в группу.
+Пример работы бота можно увидеть в группе ВК (https://vk.com/club239555705), написав сообщение в группу.
 
 ## Запуск
 
@@ -12,19 +12,19 @@
 
 Далее:
 
-1 Скачайте код.
-2 Создайте проект (Google Cloud)[https://console.cloud.google.com/].
-3 Включите API Dialogflow на вашем Google аккаунте.
-4 Включите API keys API на вашем Google аккаунте.
-5 Создайте Dialogflow агента (здесь)[https://dialogflow.cloud.google.com/] и укажите ID вашего проекта при создании агента.
-6 Установите Google Cloud CLI и авторизуйтесь в ней с помощью своего аккаунта Google.
-7 Выберете ваш проект командой `gcloud config set project ИДЕНТИФИКАТОР_ПРОЕКТА`
-8 Запустите команду `gcloud auth application-default login --scopes=https://www.googleapis.com/auth/cloud-platform` для получения json файла доступа.
-9 Установите зависимости командой `pip install -r requirements.txt`
-10 Задайте переменные окружения.
-11 Запустите обучение вашего Dialogflow агента командой `create_intent.py`
-12 Запустите бота для Телеграм командой `python bot_tg.py`
-13 Запустите бота для Вконтакте командой `python bot_vk.py`
+1. Скачайте код.
+2. Создайте проект [Google Cloud](https://console.cloud.google.com/).
+3. Включите API Dialogflow на вашем Google аккаунте.
+4. Включите API keys API на вашем Google аккаунте.
+5. Создайте Dialogflow агента [здесь](https://dialogflow.cloud.google.com/) и укажите ID вашего проекта при создании агента.
+6. Установите Google Cloud CLI и авторизуйтесь в ней с помощью своего аккаунта Google.
+7. Выберете ваш проект командой `gcloud config set project ИДЕНТИФИКАТОР_ПРОЕКТА`
+8. Запустите команду `gcloud auth application-default login --scopes=https://www.googleapis.com/auth/cloud-platform` для получения json файла доступа.
+9. Установите зависимости командой `pip install -r requirements.txt`
+10. Задайте переменные окружения.
+11. Запустите обучение вашего Dialogflow агента командой `create_intent.py`
+12. Запустите бота для Телеграм командой `python bot_tg.py`
+13. Запустите бота для Вконтакте командой `python bot_vk.py`
 
 ## Переменные окружения
 
