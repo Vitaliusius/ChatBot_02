@@ -31,14 +31,14 @@ class MyLogsHandler(logging.Handler):
 
 if __name__ == "__main__":
     load_dotenv()
-    tg_bot_token = env.str('TELEGRAM_BOT_API_KEY')
-    bot = telebot.TeleBot(tg_bot_token)
-    chat_id = env.str("TELEGRAM_CHAT_ID")
+    # tg_bot_token = env.str('TELEGRAM_BOT_API_KEY')
+    # bot = telebot.TeleBot(tg_bot_token)
+    # chat_id = env.str("TELEGRAM_CHAT_ID")
     project_id = env.str('PROJECT_ID')
     session_id = env.str('SESSION_ID')
     logger = logging.getLogger('MyLogsHandler')
     logger.setLevel(logging.INFO)
-    logger.addHandler(MyLogsHandler(bot, chat_id))
+    # logger.addHandler(MyLogsHandler(bot, chat_id))
     try:
         vk_session = vk.VkApi(token=env.str("VK_API"))
         vk_api = vk_session.get_api()
