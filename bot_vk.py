@@ -58,4 +58,5 @@ if __name__ == "__main__":
                     )
     except Exception:
         text = logger.exception('Бот vk упал с ошибкой:')
-        send_message_tg(bot, session_id, project_id, text)
+        # send_message_tg(bot, session_id, project_id, text)
+        # если раскомментировать, то без vpn будет выдавать ошибку. С vpn приверил - работает.
