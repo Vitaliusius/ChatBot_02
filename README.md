@@ -4,9 +4,9 @@
 
 Использует Dialogflow от Google для выбора нужных ответов на поступающие сообщения.
 
-Пример работы бота можно увидеть в группе (ВК)[https://vk.com/club239555705], написав сообщение в группу.
+Пример работы бота можно увидеть в группе ВК [https://vk.com/club239555705], написав сообщение в группу.
 
-<img src="assets/gif.mp4" alt="Demo bot" width="500" height="300">
+<img src="assets/gif.gif" alt="Demo bot" width="500" height="300">
 
 ## Запуск
 
@@ -23,10 +23,10 @@
 7. Выберете ваш проект командой `gcloud config set project ИДЕНТИФИКАТОР_ПРОЕКТА`
 8. Запустите команду `gcloud auth application-default login --scopes=https://www.googleapis.com/auth/cloud-platform` для получения json файла доступа.
 9. Установите зависимости командой `pip install -r requirements.txt`
-10 Задайте переменные окружения.
-11 Запустите обучение вашего Dialogflow агента командой `create_intent.py`
-12 Запустите бота для Телеграм командой `python bot_tg.py`
-13 Запустите бота для Вконтакте командой `python bot_vk.py`
+10. Задайте переменные окружения.
+11. Запустите обучение вашего Dialogflow агента командой `create_intent.py`
+12. Запустите бота для Телеграм командой `python bot_tg.py`
+13. Запустите бота для Вконтакте командой `python bot_vk.py`
 
 ## Переменные окружения
 
