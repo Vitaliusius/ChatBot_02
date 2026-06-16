@@ -6,7 +6,7 @@
 
 Пример работы бота можно увидеть в группе ВК [https://vk.com/club239555705], написав сообщение в группу.
 
-<img src="assets/gif.gif" alt="Demo bot" width="500" height="300">
+<img src="https://github.com/Vitaliusius/ChatBot_02/tree/main/assets/gif.gif" alt="Demo bot" width="500" height="300">
 
 ## Запуск
 
