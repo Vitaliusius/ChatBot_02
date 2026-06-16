@@ -6,6 +6,8 @@
 
 Пример работы бота можно увидеть в группе ВК [https://vk.com/club239555705], написав сообщение в группу.
 
+Пример бота Телеграм:
+
 <img src="https://dvmn.org/media/filer_public/7a/08/7a087983-bddd-40a3-b927-a43fb0d2f906/demo_tg_bot.gif" alt="Demo bot" width="350" height="400">
 
 ## Запуск
