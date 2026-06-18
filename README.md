@@ -26,7 +26,7 @@
 8. Запустите команду `gcloud auth application-default login --scopes=https://www.googleapis.com/auth/cloud-platform` для получения json файла доступа.
 9. Установите зависимости командой `pip install -r requirements.txt`
 10. Задайте переменные окружения.
-11. Запустите обучение вашего Dialogflow агента командой `create_intent.py`
+11. Запустите обучение вашего Dialogflow агента командой `create_intent.py` (каталог для файла `.json`)
 12. Запустите бота для Телеграм командой `python bot_tg.py`
 13. Запустите бота для Вконтакте командой `python bot_vk.py`
 
@@ -40,7 +40,7 @@
 - `GOOGLE_APPLICATION_CREDENTIALS` — Путь к файлу доступа (json).
 - `VK_API` — Токен вашего сообщества ВКонтакте.
 - `PROGECT_ID` — ID вашего проекта Google Cloud.
-- `SESSION_ID` — ID сессии.
+- `INTENT_PATH` — путь к файлу для обучения бота `intent.json` (поумолчанию находится в корневом каталоге проекта) 
 
  
 

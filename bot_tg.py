@@ -7,7 +7,7 @@ from environs import env
 from get_dialog_response import get_dialog_response
 
 
-def send_message_tg(bot, session_id, project_id, text=''):
+def send_message_tg(bot, project_id, text=''):
     @bot.message_handler(func=lambda message: message.text in ['start'])
     def start_button_message(message):
         bot.send_message(
@@ -17,7 +17,7 @@ def send_message_tg(bot, session_id, project_id, text=''):
 
     @bot.message_handler()
     def send_message(message):
-        response = get_dialog_response(session_id, message.text, project_id)
+        response = get_dialog_response(message.chat.id, message.text, project_id)
         bot.send_message(message.chat.id, text=response['response_text'])
     bot.infinity_polling()
 
@@ -36,7 +36,6 @@ class MyLogsHandler(logging.Handler):
 if __name__ == "__main__":
     load_dotenv()
     project_id = env.str('PROJECT_ID')
-    session_id = env.str('SESSION_ID')
     token_google = os.environ["GOOGLE_APPLICATION_CREDENTIALS"]
     chat_id = env.str("TELEGRAM_CHAT_ID")
     tg_bot_token = env.str('TELEGRAM_BOT_API_KEY')
@@ -45,7 +44,7 @@ if __name__ == "__main__":
     logger.setLevel(logging.INFO)
     logger.addHandler(MyLogsHandler(bot, chat_id))
     try:
-        send_message_tg(bot, session_id, project_id)
+        send_message_tg(bot, project_id)
     except Exception:
         logger.exception('Бот упал с ошибкой:')
 

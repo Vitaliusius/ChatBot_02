@@ -10,7 +10,7 @@ from get_dialog_response import get_dialog_response
 from bot_tg import send_message_tg
 
 
-def echo(event, vk_api, user_id):
+def send_message(event, vk_api, user_id):
     vk_api.messages.send(
         user_id=user_id,
         message=event,
@@ -35,7 +35,6 @@ if __name__ == "__main__":
     bot = telebot.TeleBot(tg_bot_token)
     chat_id = env.str("TELEGRAM_CHAT_ID")
     project_id = env.str('PROJECT_ID')
-    session_id = env.str('SESSION_ID')
     logger = logging.getLogger('MyLogsHandler')
     logger.setLevel(logging.INFO)
     logger.addHandler(MyLogsHandler(bot, chat_id))
@@ -44,18 +43,20 @@ if __name__ == "__main__":
         vk_api = vk_session.get_api()
         longpoll = VkLongPoll(vk_session)
         for event in longpoll.listen():
-            if event.type == VkEventType.MESSAGE_NEW and event.to_me:
-                intent = get_dialog_response(
-                    session_id,
-                    event.text,
-                    project_id
-                )
-                if not intent['intent'] == 'Default Fallback Intent':
-                    echo(
-                        intent['response_text'],
-                        vk_api,
-                        event.user_id
-                    )
+            if not event.type == VkEventType.MESSAGE_NEW and event.to_me:
+                continue
+            intent = get_dialog_response(
+                user_id,
+                event.text,
+                project_id
+            )
+            if intent['intent'] == 'Default Fallback Intent':
+                continue
+            send_message(
+                intent['response_text'],
+                vk_api,
+                event.user_id
+            )
     except Exception:
         text = logger.exception('Бот vk упал с ошибкой:')
         send_message_tg(bot, session_id, project_id, text)
