@@ -46,7 +46,7 @@ if __name__ == "__main__":
             if not event.type == VkEventType.MESSAGE_NEW and event.to_me:
                 continue
             intent = get_dialog_response(
-                user_id,
+                f'vk-{user_id}',
                 event.text,
                 project_id
             )
@@ -59,4 +59,4 @@ if __name__ == "__main__":
             )
     except Exception:
         text = logger.exception('Бот vk упал с ошибкой:')
-        send_message_tg(bot, session_id, project_id, text)
+        send_message_tg(bot, project_id, text)

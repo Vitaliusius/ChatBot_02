@@ -20,4 +20,5 @@ def get_dialog_response(session_id, text, project_id):
         'confidence': dialogflow_response.query_result.intent_detection_confidence,
         'response_text': dialogflow_response.query_result.fulfillment_text,
     }
+    
     return response

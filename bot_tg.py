@@ -17,7 +17,7 @@ def send_message_tg(bot, project_id, text=''):
 
     @bot.message_handler()
     def send_message(message):
-        response = get_dialog_response(message.chat.id, message.text, project_id)
+        response = get_dialog_response(f'tg-{message.from_user.id}', message.text, project_id)
         bot.send_message(message.chat.id, text=response['response_text'])
     bot.infinity_polling()
 
